@@ -5,15 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.harmoush.photoweather.R
+import com.harmoush.photoweather.ui.BaseFragment
+import com.harmoush.photoweather.utils.toast
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class FirstFragment : BaseFragment() {
 
     private val viewModel by viewModel<FirstFragmentViewModel>()
     override fun onCreateView(
@@ -30,6 +31,7 @@ class FirstFragment : Fragment() {
 
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
             viewModel.showToast()
+            toast("Well Done")
         }
     }
 }
