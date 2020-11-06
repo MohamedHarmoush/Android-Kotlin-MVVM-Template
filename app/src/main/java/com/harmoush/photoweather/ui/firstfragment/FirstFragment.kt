@@ -1,4 +1,4 @@
-package com.harmoush.photoweather.ui
+package com.harmoush.photoweather.ui.firstfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,14 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.harmoush.photoweather.R
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class FirstFragment : Fragment() {
 
+    private val viewModel by viewModel<FirstFragmentViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,7 +29,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            Toast.makeText(requireContext(), "Go Next", Toast.LENGTH_SHORT).show()
+            viewModel.showToast()
         }
     }
 }
