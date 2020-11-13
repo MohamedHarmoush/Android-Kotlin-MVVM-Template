@@ -7,6 +7,7 @@
 	-  [LiveData](https://developer.android.com/topic/libraries/architecture/livedata "LiveData")
 	- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel "ViewModel")
 	- [Room](https://developer.android.com/topic/libraries/architecture/room "Room")
+- [Navigation](https://developer.android.com/guide/navigation "Navigation") to handle navigation between different destinations
 - [Koin](https://pandao.github.io/editor.md/en.html "Koin") for dependency injection
 - [Gson](https://github.com/google/gson "Gson") for parsing JSON
 - [Retrofit2](https://github.com/square/retrofit "Retrofit2") to aid with API communicaton
