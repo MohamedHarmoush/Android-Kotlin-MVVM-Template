@@ -2,7 +2,7 @@
 
 ##### Android MVVM Template using (Tech Stack)
 - Android Architecture Components
-	- [Data Binding]((https://developer.android.com/topic/libraries/data-binding)
+	- [Data Binding](https://developer.android.com/topic/libraries/data-binding "Data Binding")
 	- [View Binding](https://developer.android.com/topic/libraries/view-binding "View Binding")
 	-  [LiveData](https://developer.android.com/topic/libraries/architecture/livedata "LiveData")
 	- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel "ViewModel")
