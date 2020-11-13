@@ -22,11 +22,11 @@ sealed class ApiResponse<T> {
                     ApiSuccessResponse(body)
                 }
             } else {
-                val msg = response.errorBody()?.string()
+                val msg =  response.message()
                 val errorMsg = if (msg.isNullOrEmpty()) {
                     response.message()
                 } else {
-                    msg
+                    response.errorBody()?.string()
                 }
                 ApiErrorResponse(response.code(), errorMsg ?: "unknown error")
             }
